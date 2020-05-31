@@ -67,6 +67,7 @@ namespace NLayerProject.Web.Controllers
 
         public IActionResult Insert()
         {
+            //Gelistir  
             return View();
         }
 
