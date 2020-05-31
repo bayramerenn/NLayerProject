@@ -65,6 +65,10 @@ namespace NLayerProject.Web.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult Remove()
+        {
+            return View();
+        }
        
     }
 }
