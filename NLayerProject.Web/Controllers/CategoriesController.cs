@@ -71,6 +71,10 @@ namespace NLayerProject.Web.Controllers
             return View();
         }
 
+        public IActionResult actionResult()
+        {
+            return View();
+        }
        
     }
 }
