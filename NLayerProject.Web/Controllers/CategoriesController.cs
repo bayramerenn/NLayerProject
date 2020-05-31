@@ -13,7 +13,7 @@ namespace NLayerProject.Web.Controllers
         {
             _categoryApiService = categoryApiService;
         }
-
+        
         public async Task<IActionResult> Index()
         {
             var categories = await _categoryApiService.GetAllAsync();
@@ -59,15 +59,12 @@ namespace NLayerProject.Web.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
-            // id değeri ile veri çekip göndermeyi CategoryApiService yapıyor.
+            
             await _categoryApiService.Delete(id);
-
+             
             return RedirectToAction("Index");
         }
 
-        public IActionResult Remove()
-        {
-            return View();
-        }
+       
     }
 }
