@@ -65,6 +65,11 @@ namespace NLayerProject.Web.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult Insert()
+        {
+            return View();
+        }
+
        
     }
 }
