@@ -65,7 +65,7 @@ namespace NLayerProject.Web.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult Remove()
+        public IActionResult actionResult()
         {
             return View();
         }
